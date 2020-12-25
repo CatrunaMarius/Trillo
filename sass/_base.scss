@@ -77,3 +77,17 @@ body {
     min-height: 100vh;
 }
 
+/*width*/
+body::-webkit-scrollbar {
+    width:8px;
+    }
+    /*track*/
+    body::-webkit-scrollbar-track {
+    background: #fff;
+    
+    }
+    /*thumb*/
+    body::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+    border-radius:30px;
+    }

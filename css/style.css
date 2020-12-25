@@ -65,6 +65,23 @@ body {
   min-height: 100vh;
 }
 
+/*width*/
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+/*track*/
+body::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/*thumb*/
+body::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, right bottom, from(var(--color-primary-light)), to(var(--color-primary-dark)));
+  background: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+  border-radius: 30px;
+}
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
